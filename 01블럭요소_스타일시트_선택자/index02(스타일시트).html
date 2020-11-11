@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 우선순위 : 인라인 > 내부 > 외부 -->
+
+    <!-- 외부스타일시트 -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 내부스타일시트 -->
+    <style type="text/css">
+        p {color: red;}
+       
+    </style>
+
+</head>
+<body>
+
+    <p>내부스타일 시트</p>
+
+    <span>외부스타일 시트</span>
+
+    <!-- 인라인스타일 -->
+    <p style="color: purple; font-size: large;">인라인시트</p>
+    
+</body>
+</html>

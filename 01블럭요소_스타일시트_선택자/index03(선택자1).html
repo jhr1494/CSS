@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        *{ } /* 디자인시작전에 전역선택자로 선언하고 시작한다*/
+        b {color: red;}
+        ul, li {list-style: none;} /* ul과 li의 동시적용 */
+        #a1 {color: green; font-weight: bold;}
+        .b1 {color: salmon;}
+
+        .abox p {color: red;} /* abox클래스 내부의 p 태그는 전부 적용*/
+        .bbox > p {color: blue;} /* > 는 클래스 한단계 내부의 p태그 적용*/
+    </style>
+
+</head>
+<body>
+
+    <b>태그선택자</b>
+
+    <ul>
+        <li>다중선택자</li>
+        <li>다중선택자</li>
+    </ul>
+
+    <p id="a1">아이디선택자는 #</p>
+    <p class="b1">클래스 선택자는 .</p>
+
+
+    <div class="abox">
+        <p>하위선택자 공백</p>
+        <p>하위선택자 공백</p>
+        <ul>
+            <li><p>하위선택자 공백</p></li>
+            <li><p>하위선택자 공백</p></li>
+            <li>하위선택자 공백</li> <!-- p태그가 없기 때문에 빨간색이 적용되지 않습니다 -->
+        </ul>
+
+    </div>
+
+    <div class="bbox">
+        <p>자식선택자 ></p>
+        <p>자식선택자 ></p>
+        <ul>
+            <li>자식선택자 공백</li> <!-- > 이기때문에 ul태그 내부(두단계 내부)의 p는 적용이 안된다  -->
+            <li>자식선택자 공백</li>
+        </ul>
+
+
+    </div>
+
+
+
+
+    
+</body>
+</html>

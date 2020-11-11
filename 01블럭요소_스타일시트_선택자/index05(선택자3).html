@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        /* 가상선택자 */
+        /* :hover --- a태그에 마우스가 닿으면 발생되는 css */
+        .list > li > a:hover {background-color: yellow;}
+
+        /* :focus --- input태그에 클릭(포커스)되면 발생되는 css  */
+        .inner > input:focus {background-color: yellow;}
+
+        /* :active --- p태그의 활성화(클릭)시에만 발생되는 css (클릭시에만 잠깐) */
+        .title:active {background-color: yellow;}
+
+        /* w3schools.com 참고*/
+
+    </style>
+
+</head>
+<body>
+
+    <div>
+        <ul class="list">
+            <li><a href="#">목록1</a></li>
+            <li><a href="#">목록2</a></li>
+            <li><a href="#">목록3</a></li>
+        </ul>
+    </div>
+
+    <div class="inner">
+        <input type="text" >
+    </div>
+    
+    <p class="title">
+        active
+    </p>
+
+
+</body>
+</html>

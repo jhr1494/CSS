@@ -1,0 +1,8 @@
+
+/* 
+    css파일의 참조(import)
+    @import url("파일명");
+*/
+
+@import url("common.css");
+span {color: blue;}
