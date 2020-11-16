@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        /* 블럭을 인라인으로 바꿈 (옆으로 정렬) */
+        .list > .inner {display: inline;}
+        /* 인라인을 블럭으로 바꿈(줄바꿈이 일어남)  */
+        .list > span, .list > strong, .list > small {display: block;}
+        /* 인라인 블럭 - 메뉴 판만들때 씀 */
+        /* 정렬,크기지정은 balock만 가능 */
+        /* 인라인 블럭 - 줄바꿈은 일어나지 않고, block 요소들의 크기, 정렬기능 을 사용할 수 있게 해줌 */
+        .list > a {
+            display: block;
+            width: 100px ;
+            height: 100px;
+            line-height: 100px; /* 높이,자간을 동일하게 가운대 */  
+            text-align: center;
+            border: 1px solid #777;
+        }
+        .box > {display: none;}
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="list">
+        <div class="inner">블럭</div>
+        <div class="inner">블럭</div>
+        <div class="inner">블럭</div>
+        <div class="inner">브으으으러러럭을 인라인요소로 바꾸기 디스플레이인라인</div>
+
+    </div>
+
+    <div class="list">
+        <span>인라인</span> 
+        <span>인라인</span> 
+        <span>인라인</span>
+       
+    </div>
+
+    <div class="list">
+        <a href="#">인라인</a>
+        <a href="#">인라인</a>
+        <a href="#">인라인</a>
+    </div>
+
+    <div class="box">
+       아이디 비밀번호 확인해주세요
+    </div>
+</body>
+</html>

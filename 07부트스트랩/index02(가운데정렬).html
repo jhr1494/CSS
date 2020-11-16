@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <!-- jQuery (부트스트랩의 기능을 사용하기 위해 반드시 필요) -->
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        .my-grid { 
+            /* 
+            박스넓이가 지정되어 있을 때 가운데 정렬 
+            모든 col옵션에 float:left 를 가지고 있어서 바로 적용은 안됨
+            만약에 그리드를 1개만 사용하고 해당 그리드를 가운데 정렬하고 싶다면
+            float을 없애는 none과 같이 사용하면 됩니다. 
+            */
+            margin: 0 auto;
+            float: none; /* float때문에 가운데 정렬이 되지 않으므로 none 표기를 해줌 */
+        } 
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-9 col-xs-12 my-grid"> 
+
+                    <!-- form-group 안에 control -->
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+
+                     <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+
+                    <!-- 버튼 -->
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

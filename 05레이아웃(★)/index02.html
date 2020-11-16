@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style type="text/css">
+      .list {
+        width: 80%; /* 전체 넓이의 80% */
+        margin: 0 auto;
+        border: 1px solid;
+        overflow: hidden;
+      }
+      .list .inner {
+        border: 1px solid;
+        float: left; /* 부모요소에 overflow: hidden */
+        width: 25%; /* 상자 전체의 25%로 */
+        box-sizing: border-box;
+      }
+
+      /* 부모 */
+      .inner .content {
+        overflow: hidden;
+      }
+
+      .left {
+        float: left;
+        margin: 0 auto;
+      }
+
+      .rigth {
+        float: right;
+        margin: 0 auto;
+      }
+      .left span {
+        /* span 인라인 요소를 블럭으로 만들기 활용 */
+        display: block;
+      }
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="list">
+      <div class="inner">
+        <img src="img/bgimg.png" alt="물고기" />
+        <div class="content">
+          <div class="left">
+            <span>좌측</span>
+            <!--   display: block 으로 요소배치를 바꿈 -->
+            <span>좌측</span>
+            <span>좌측</span>
+            <span>좌측</span>
+          </div>
+
+          <div class="rigth">우측1</div>
+          <div class="clear">플롯해제</div>
+          <!--  clear: both로 float의 영향 해제 -->
+        </div>
+      </div>
+      <div class="inner">
+        <img src="img/bgimg.png" alt="물고기" />
+      </div>
+      <div class="inner">
+        <img src="img/bgimg.png" alt="물고기" />
+      </div>
+      <div class="inner">
+        <img src="img/bgimg.png" alt="물고기" />
+      </div>
+    </div>
+  </body>
+</html>

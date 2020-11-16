@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        /* 768이상 사이즈에서 해당 css가 동작됩니다 */
+        @media (min-width: 768px){
+
+            .box1 {border: 1px solid black; }
+        }
+
+        /* 미디어 쿼리는 화면사이즈에 따라서 다르게 동작하도록 처리 */
+        /* 767미만 사이즈에서 해당 css가 동작됩니다 */
+        @media (max-width: 767px) {
+            .box1 {
+                display: none;
+            }
+        }
+
+        /* box2미디어 */
+        .box2 {width: 100%; margin: 0 auto; overflow: hidden;}
+
+        /* 1300px이상에서 동작 */
+        @media (min-width: 1300px){
+            .box2 .inner {width: 16.6666%; float: left;}
+
+        }
+
+        /* 1299px ~ 768px이상 까지 동작 */
+        @media (max-width: 1299px) and (min-width: 768px){
+            .box2 .inner {width: 25%; float: left;}
+
+        }
+        
+        @media (max-width: 767px) {
+            .box2 .inner {width: 50%; float: left;}
+            
+        } 
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="box1">
+        내용...
+    </div>
+
+    <div class="box2">
+        <div class="inner">내용</div>
+        <div class="inner">내용</div>
+        <div class="inner">내용</div>
+        <div class="inner">내용</div>
+        <div class="inner">내용</div>
+        <div class="inner">내용</div>
+    </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      .list {
+        /* 바깥상자 크기 */
+        border: 1px solid;
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden; /* 플로 래프트를 자식이 쓰면 부모에 붇여주기 */
+        padding: 5px;
+      }
+      /* 박스 디스레이  플로어 */
+      .list .inner {
+        float: left;
+        width: 25%;
+        /*      border: 1px solid; */
+        box-sizing: border-box; /* 보더에 대한 넓이도 박스에 포함시킨다  */
+        padding: 5px;
+        overflow: hidden;
+      }
+      .list .inner .content {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="list">
+      <!-- 가장 밖  -->
+      <div class="inner">
+        <div class="content">
+          <img src="img/bgimg.png" alt="붕어" />
+          <div>내용</div>
+        </div>
+      </div>
+      <div class="inner">
+        <div class="content">
+          <img src="img/bgimg.png" alt="붕어" />
+          <div>내용</div>
+        </div>
+      </div>
+      <div class="inner">
+        <div class="content">
+          <img src="img/bgimg.png" alt="붕어" />
+          <div>내용</div>
+        </div>
+      </div>
+      <div class="inner">
+        <div class="content">
+          <img src="img/bgimg.png" alt="붕어" />
+          <div>내용</div>
+        </div>
+      </div>
+    </div>
+    <div class="list">
+      <!-- 가장 밖  -->
+      <div class="inner">
+        <div class="content">
+          <img src="img/bgimg.png" alt="붕어" />
+          <div>내용</div>
+        </div>
+      </div>
+      <div class="inner">
+        <div class="content">
+          <img src="img/bgimg.png" alt="붕어" />
+          <div>내용</div>
+        </div>
+      </div>
+      <div class="inner">
+        <div class="content">
+          <img src="img/bgimg.png" alt="붕어" />
+          <div>내용</div>
+        </div>
+      </div>
+      <div class="inner">
+        <div class="content">
+          <img src="img/bgimg.png" alt="붕어" />
+          <div>내용</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

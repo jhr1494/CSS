@@ -1,0 +1,40 @@
+/* 웹폰트 선언 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* 디자인 시작시 전역 설정 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* 박스에 border-box설정 */
+}
+
+body, html{
+    
+    font-family: 'Nanum Gothic', sans-serif;
+    width: 100%;
+    min-width: 320px; /* body영역의 최소사이즈 */
+}
+
+img{
+    max-width: 100%; /* 사이즈가 변해도 넓이는 유지 */
+    height: auto; /* 사이지가 변하면 높이응 넓이에 비례해서 유지 */
+}
+
+input, textarea, button, select{
+    /* 
+    고유하게 적용되어 있는 form관련 요소들을 제거해서
+    여러 브라우저에서 동일한 form관련태드 디자인이 보이도록 처리
+     */
+
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     -ms-appearance: none;
+     -o-appearance: none;
+     appearance: none;
+}
+
+ul, li, ol, dl{
+    list-style: none;
+    
+}
+

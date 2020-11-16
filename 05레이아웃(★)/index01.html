@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      /* 알반적으로 float을 적용시키면 부모컨텐츠 높이가 지정이 안되는 현상때문에 */
+      /* 플롯을 해제라는 작업과 반드시 같이 사용합니다 */
+      /* 1. 가상요소방법  */
+      /*   .box-list::after {
+        content: "";
+        display: block;
+        clear: both;
+      } */
+
+      /* 2.부모요소에 overflow: hidden ★이거 알아두기 */
+
+      .box-list {
+        overflow: hidden;
+        width: 50%; /*ul을 가운데로 모으고 싶을 때 넓이주고 마진 0으로 */
+        margin: 0 auto;
+      }
+
+      .box-list li {
+        float: left;
+        /* 6개의 블록을 6등분하는방법 */
+        width: 16.6666%;
+        box-sizing: border-box; /* 보더의 넓이를 박스의 넓이에 포함시킨다 */
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="box-list">
+      <li>블럭1</li>
+      <li>블럭2</li>
+      <li>블럭3</li>
+      <li>블럭4</li>
+      <li>블럭5</li>
+      <li>블럭6</li>
+      <li>블럭7</li>
+      <li>블럭8</li>
+      <li>블럭9</li>
+      <li>블럭10</li>
+    </ul>
+  </body>
+</html>

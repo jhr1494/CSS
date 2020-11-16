@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        ul, li {list-style: none;}
+        .box li {
+            display: inline-block;
+            border: 1px solid #777;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: aqua;
+
+            }
+        .box li a {color: black;
+                text-decoration: none;
+        }
+        /* ------- 문제 --------- */
+        .box2 {
+            background-color: black; /* 바탕색 검저 */
+            text-align: center; 
+
+        }
+        .gnb li {
+            display: inline-block; /* 박스 배치 */
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+        }/* box2에게 상속 받아 정령되어있음 */
+
+        .gnb li a {
+            color: white;  text-decoration: none;
+        }
+
+    .gnb li:hover{background-color:  #777;}
+    
+    </style>
+    
+</head>
+<body>
+    
+  <nav>
+      <ul class="box">
+          <li><a href="">메뉴1</a></li>
+          <li><a href="">메뉴2</a></li>
+          <li><a href="">메뉴3</a></li>
+          <li><a href="">메뉴4</a></li>
+          <li><a href="">메뉴5</a></li>
+      </ul>
+  </nav>
+
+    <hr/>
+  <nav class="box2">
+    <ul class="gnb">
+        <li><a href="">메뉴1</a></li>
+        <li><a href="">메뉴2</a></li>
+        <li><a href="">메뉴3</a></li>
+        <li><a href="">메뉴4</a></li>
+        <li><a href="">메뉴5</a></li>
+    </ul>
+</nav>
+  
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      /* 블럭에서 가로 정렬 */
+      p {
+        border: 1px solid #777;
+      }
+      .tx1 {
+        text-align: left;
+      }
+      .tx2 {
+        text-align: center;
+      }
+      .tx3 {
+        text-align: right;
+      }
+
+      /* 기분이 잡혀있는 나란리 배치된 요소에 적용이 가능 */
+      .tx4 img {
+        vertical-align: top;
+      }
+      .tx5 img {
+        vertical-align: bottom;
+      }
+      .tx6 img {
+        vertical-align: middle;
+      }
+
+      /* 기준이 되는 테그가 없을 때,
+          박스높이와 line-height(글자 간격)을 동일하게 맞추면
+          문단 가운데 정렬이 됩니다. */
+      .box {
+        height: 100px;
+        line-height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="tx1">안녕하세요</p>
+    <p class="tx2">안녕하세요</p>
+    <p class="tx3">안녕하세요</p>
+
+    <p class="tx4">
+      안녕
+      <img src="img/css3.png" />
+      하세요
+    </p>
+
+    <p class="tx5">
+      안녕
+      <img src="img/html5.png" />
+    </p>
+
+    <p class="tx6">
+      안녕
+      <img src="img/jquery.png" />
+    </p>
+
+    <p class="box">헬로 월드</p>
+  </body>
+</html>

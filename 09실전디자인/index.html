@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩 참조파일-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- 개인디자인추가 -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <style>
+        .myheader {background-color: #263238;}
+        .myheader a{
+            color: bisque;
+            font-size: 15px;
+        }
+
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+    <!-- 1. 개발자도구에서 디자인 속성을 확인하고 nav-inverse 삭제 -->
+
+    <header class="myheader">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- 휴대폰사이즈로 줄었을 때 나오는 우측 버튼영역 -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="img/logo.svg" width="30" alt="logo"></a> <!-- 로고영역 -->
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+
+                    <!-- 메뉴작성부분 -->
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                    </ul>
+
+                    <!-- 우측메뉴부분 (드롭다운 부분으로 변경) -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">로그인 
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">login</a></li>
+                                <li><a href="#">join</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+</body>
+
+</html>
