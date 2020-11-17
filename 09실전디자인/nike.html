@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스크랩 참조파일 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- 개인 디자인 추가 -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style type="text/css">
+        
+    </style>
+
+</head>
+
+<body>
+    <header class="my-header">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- 휴대폰 사이즈로 줄였을때 나오는 버튼영역 -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- 로고 영역 -->
+                    <a class="navbar-brand" href="#"><img src="img/logo.svg" width="30" alt="logo" /></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <!-- 메뉴 작성 부분 -->
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                    </ul>
+                    <!-- 우측 메뉴부분 (드롭다운) -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">로그인 <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- 네비바 폼영역 -->
+                    <form class="navbar-form navbar-right" action="/action_page.php">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="search" />
+                            <div class="input-group-btn">
+                                <button class="btn btn-primary" type="submit">검색</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+
+            <h2>상품그리드(NIKE)</h2>
+            <hr />
+
+            <ul class="row">
+
+                <!-- 상품 1번 -->
+                <li class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="prod-list2">
+                        <div class="prod-img">
+                            <img src="img/prod1.jpg">
+                        </div>
+                        <div class="prod-content"><!-- 부모 -->
+                            <div class="prod-info">
+                                <span>나이키 에어맥스</span>
+                                <span>MEN 신발 라이프 스타일</span>
+                                <span>8칼라</span>
+                            </div>
+                            <div class="prod-price">
+                                <strong>199,000원</strong>
+                            </div>
+                        </div>
+
+                        <!-- 숨겨놓을 영역(컬러이미지) - hover용 -->
+                        <div class="prod-color">
+                            <ul>
+                                <li><img src="img/color1.jpg" width="50"></li>
+                                <li><img src="img/color2.jpg" width="50"></li>
+                                <li><img src="img/color3.jpg" width="50"></li>
+                                <li><img src="img/color4.jpg" width="50"></li>
+                                <li><img src="img/color5.jpg" width="50"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- 상품 2번 -->
+                <li class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="prod-list2">
+                        <div class="prod-img">
+                            <img src="img/prod2.jpg">
+                        </div>
+                        <div class="prod-content">
+                            <!-- 부모 -->
+                            <div class="prod-info">
+                                <span>나이키 에어맥스</span>
+                                <span>라이프 스타일</span>
+                                <span>5칼라</span>
+                            </div>
+                            <div class="prod-price">
+                                <strong>99,000원</strong>
+                            </div>
+                        </div>
+
+                        <!-- 숨겨놓을 영역(컬러이미지) - hover용 -->
+                        <div class="prod-color">
+                            <ul>
+                                <li><img src="img/color1.jpg" width="50"></li>
+                                <li><img src="img/color2.jpg" width="50"></li>
+                                <li><img src="img/color3.jpg" width="50"></li>
+                                <li><img src="img/color4.jpg" width="50"></li>
+                                <li><img src="img/color5.jpg" width="50"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </li>
+
+
+                <!-- 3 -->
+                <li class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="prod-list2">
+                        <div class="prod-img">
+                            <img src="img/prod3.jpg">
+                        </div>
+                        <div class="prod-content">
+                            <!-- 부모 -->
+                            <div class="prod-info">
+                                <span>나이키 에어맥스</span>
+                                <span>라이프 스타일</span>
+                                <span>5칼라</span>
+
+                            </div>
+                            <div class="prod-price">
+                                <strong>99,000원</strong>
+                            </div>
+                        </div>
+
+                        <!-- 숨겨놓을 영역(컬러이미지) - hover용 -->
+                        <div class="prod-color">
+                            <ul>
+                                <li><img src="img/color1.jpg" width="50"></li>
+                                <li><img src="img/color2.jpg" width="50"></li>
+                                <li><img src="img/color3.jpg" width="50"></li>
+                                <li><img src="img/color4.jpg" width="50"></li>
+                                <li><img src="img/color5.jpg" width="50"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </li>
+
+                <!-- 4 -->
+                <li class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="prod-list2">
+                        <div class="prod-img">
+                            <img src="img/prod4.jpg">
+                        </div>
+                        <div class="prod-content">
+                            <!-- 부모 -->
+                            <div class="prod-info">
+                                <span>나이키 에어맥스</span>
+                                <span>라이프 스타일</span>
+                                <span>5칼라</span>
+
+                            </div>
+                            <div class="prod-price">
+                                <strong>99,000원</strong>
+                            </div>
+                        </div>
+
+                        <!-- 숨겨놓을 영역(컬러이미지) - hover용 -->
+                        <div class="prod-color">
+                            <ul>
+                                <li><img src="img/color1.jpg" width="50"></li>
+                                <li><img src="img/color2.jpg" width="50"></li>
+                                <li><img src="img/color3.jpg" width="50"></li>
+                                <li><img src="img/color4.jpg" width="50"></li>
+                                <li><img src="img/color5.jpg" width="50"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </li>
+
+                <!-- 5 -->
+                <li class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="prod-list2">
+                        <div class="prod-img">
+                            <img src="img/prod5.jpg">
+                        </div>
+                        <div class="prod-content">
+                            <!-- 부모 -->
+                            <div class="prod-info">
+                                <span>나이키 에어맥스</span>
+                                <span>라이프 스타일</span>
+                                <span>5칼라</span>
+
+                            </div>
+                            <div class="prod-price">
+                                <strong>99,000원</strong>
+                            </div>
+                        </div>
+
+                        <!-- 숨겨놓을 영역(컬러이미지) - hover용 -->
+                        <div class="prod-color">
+                            <ul>
+                                <li><img src="img/color1.jpg" width="50"></li>
+                                <li><img src="img/color2.jpg" width="50"></li>
+                                <li><img src="img/color3.jpg" width="50"></li>
+                                <li><img src="img/color4.jpg" width="50"></li>
+                                <li><img src="img/color5.jpg" width="50"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </li>
+
+                <!-- 6 -->
+                <li class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="prod-list2">
+                        <div class="prod-img">
+                            <img src="img/prod6.jpg">
+                        </div>
+                        <div class="prod-content">
+                            <!-- 부모 -->
+                            <div class="prod-info">
+                                <span>나이키 에어맥스</span>
+                                <span>라이프 스타일</span>
+                                <span>5칼라</span>
+
+                            </div>
+                            <div class="prod-price">
+                                <strong>99,000원</strong>
+                            </div>
+                        </div>
+
+                        <!-- 숨겨놓을 영역(컬러이미지) - hover용 -->
+                        <div class="prod-color">
+                            <ul>
+                                <li><img src="img/color1.jpg" width="50"></li>
+                                <li><img src="img/color2.jpg" width="50"></li>
+                                <li><img src="img/color3.jpg" width="50"></li>
+                                <li><img src="img/color4.jpg" width="50"></li>
+                                <li><img src="img/color5.jpg" width="50"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </li>
+
+                <!-- 7 -->
+                <li class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="prod-list2">
+                        <div class="prod-img">
+                            <img src="img/prod7.jpg">
+                        </div>
+                        <div class="prod-content">
+                            <!-- 부모 -->
+                            <div class="prod-info">
+                                <span>나이키 에어맥스</span>
+                                <span>라이프 스타일</span>
+                                <span>5칼라</span>
+
+                            </div>
+                            <div class="prod-price">
+                                <strong>99,000원</strong>
+                            </div>
+                        </div>
+
+                        <!-- 숨겨놓을 영역(컬러이미지) - hover용 -->
+                        <div class="prod-color">
+                            <ul>
+                                <li><img src="img/color1.jpg" width="50"></li>
+                                <li><img src="img/color2.jpg" width="50"></li>
+                                <li><img src="img/color3.jpg" width="50"></li>
+                                <li><img src="img/color4.jpg" width="50"></li>
+                                <li><img src="img/color5.jpg" width="50"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </li>
+
+                <!-- 8 -->
+                <li class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="prod-list2">
+                        <div class="prod-img">
+                            <img src="img/prod8.jpg">
+                        </div>
+                        <div class="prod-content">
+                            <!-- 부모 -->
+                            <div class="prod-info">
+                                <span>나이키 에어맥스</span>
+                                <span>라이프 스타일</span>
+                                <span>5칼라</span>
+
+                            </div>
+                            <div class="prod-price">
+                                <strong>99,000원</strong>
+                            </div>
+                        </div>
+
+                        <!-- 숨겨놓을 영역(컬러이미지) - hover용 -->
+                        <div class="prod-color">
+                            <ul>
+                                <li><img src="img/color1.jpg" width="50"></li>
+                                <li><img src="img/color2.jpg" width="50"></li>
+                                <li><img src="img/color3.jpg" width="50"></li>
+                                <li><img src="img/color4.jpg" width="50"></li>
+                                <li><img src="img/color5.jpg" width="50"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </li>
+
+
+                <!-- 9 -->
+                <li class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="prod-list2">
+                        <div class="prod-img">
+                            <img src="img/prod9.jpg">
+                        </div>
+                        <div class="prod-content">
+                            <!-- 부모 -->
+                            <div class="prod-info">
+                                <span>나이키 에어맥스</span>
+                                <span>라이프 스타일</span>
+                                <span>5칼라</span>
+
+                            </div>
+                            <div class="prod-price">
+                                <strong>99,000원</strong>
+                            </div>
+                        </div>
+
+                        <!-- 숨겨놓을 영역(컬러이미지) - hover용 -->
+                        <div class="prod-color">
+                            <ul>
+                                <li><img src="img/color1.jpg" width="50"></li>
+                                <li><img src="img/color2.jpg" width="50"></li>
+                                <li><img src="img/color3.jpg" width="50"></li>
+                                <li><img src="img/color4.jpg" width="50"></li>
+                                <li><img src="img/color5.jpg" width="50"></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </li>
+
+            </ul>
+
+            <!-- 페이지네이션 -->
+            <div class="text-center"> <!-- 부트스트랩 가운데 정렬 클래스 -->
+                <ul class="pagination pagination-sm">
+                    <li><a href="#">이전</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">다음</a></li>
+                </ul>
+
+                <button type="button" class="btn btn-info">글쓰기</button>
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="footer-copyrigth">
+                        <a href="#"><img src="img/logo.svg" width="20" /></a>
+                        대표자 : 홍길동 email : kkk@gmail.com <br />
+                        개인정보 책임자 : 홍길동 : 온라인 강의 진행 주소: 서울 강남구역삼
+                        <address>@bootstrap. All RIGHT REVERSED</address>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12"></div>
+
+                <!-- <ul class="footer-menu text-rigth"> = text-rigth 직접 적용 가능  -->
+                <ul class="footer-menu">
+                    <li><a href="#">유용한 정보</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">고객선터</a></li>
+                    <li><a href="#">개인정보 취급반식</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

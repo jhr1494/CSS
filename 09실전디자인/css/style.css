@@ -1,0 +1,199 @@
+/* ========== from, btn 윤곽 =========== */
+section {margin-top: 50px;}
+.form-control {
+  border-radius: 0;
+}
+.bnt {
+  border-radius: 0;
+}
+/* =========== heaer =========== */
+.my-header {
+  background-color: rgb(8, 8, 8);
+  position: fixed; /* 해더 고정- body기준 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  /* z측으로 50 */
+}
+.my-header a {
+  color: white;
+  font-size: 15px;
+}
+/*  */
+.navbar {
+  /*  마진을 없앰 */
+  margin-bottom: 0;
+}
+.navbar-brand {
+  padding: 10px 20px;
+}
+/* 가상선택자  */
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background-color: rgb(70, 69, 71);
+}
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+  background-color: rgb(70, 69, 71);
+}
+
+/* 윤각선- 보더에 컬러  */
+.navbar-toggle {
+  border-color: white;
+}
+.navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+/* ========== footer ========== */
+footer {
+  background-color: rgb(8, 8, 8);
+  color: white;
+  font-size: 13px;
+  padding: 40px 0; /* 위아래 , 좌우  */
+  margin: 70px; /*footer 바깥여백 70, 본문 영역에 붙지 않도록 */
+}
+footer .footer-copyrigth address {
+  margin-bottom: 0;
+}
+footer .footer-menu {
+  text-align: right; /* 부트스크립에서 제공함 */
+}
+footer .footer-menu li {
+  display: inline-block; /*한줄로 만들기  */
+  padding: 0 10px; /* 위아래 0 좌우 10 */
+}
+footer .footer-menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+
+
+/* ========== banner ========== */
+.my-banner { position: relative;
+  
+}
+.left carousel-control,
+.right carousel-control {
+  /* 암영 입히기 */
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    0,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+/* ========== Index ========== */
+.prod-list, .prod-box {
+  display: block; /* 블럭요소로 변경 */
+  border: 1px solid #ddd;
+  text-align: center; /* 블럭이나 text 가운데 정렬 */
+}
+
+.prod-list, .prod-list > li {
+  padding: 5px; /* 가장바깥, 숨긴박스 패딩 5 */
+}
+
+.prod-box{
+  position: relative;
+}
+
+.prod-box .arrow{
+  display: block;/* 높이 넓이를 사용하기 위해 블럭요소처리 */
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  position: absolute; /* 위치기반으로 올릴 부모클래스에 relative */
+  bottom: 10px;
+  left: 10px;
+  background-color: #ccc;
+  color: white;
+  opacity: 1;
+}
+
+.prod-box .hover{
+  display: block;
+  width: 100px;
+  height: 35px;
+  line-height: 35px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: small;
+  background-color: rgb(36, 125, 241);
+  color: white;
+  opacity: 0; /* 투명도 0~1 */
+}
+
+/* hover기능시 arrow의 투명도 변경 */
+.prod-box:hover > .arrow {
+  opacity: 0;
+
+}
+
+.prod-box:hover > .hover {
+  opacity: 1;
+
+}
+
+/* hover기능시 자신의 border값 변경 */
+.prod-box:hover {
+  border: 1px solid rgb(36, 125, 241);
+}
+
+
+/* ==========  상품그리드 ========== */
+.prod-img {
+  text-align: center;
+}
+
+/* 이미지를 가운데로 */
+.prod-content {
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+/* 부모영역에 hidden */
+.prod-info {
+  float: left;
+}
+
+.prod-info span {
+  font-size: small;
+  display: block;
+}
+
+.prod-price {
+  display: block;
+  float: right;
+}
+
+.prod-color ul {
+  overflow: hidden;
+}
+
+.prod-color ul li {
+  float: left;
+}
+
+.prod-color {
+  /* 숨겨놓은 영역 */
+  opacity: 0;
+  margin-top: -36px;
+
+  /* transition(변경할옵션, 주기, 변경속도, 딜레이초) */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.prod-list2:hover>.prod-color {
+  opacity: 1;
+}
+
+/* 페이지네이션-버튼 */
+.text-center {overflow: hidden;}
+.text-center ul {margin: 0;}
+.text-center button {float: right; padding: 4px 12px;}
