@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스크랩 참조파일 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- 개인 디자인 추가 -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style type="text/css">
+    
+    /* 토글탭 basic */
+    .tabs-basic > li {
+        width: 25%;
+    }
+    
+    .tabs-basic >li >a:hover{
+        background-color: #dddddd;
+    }
+
+    .tabs-basic > li > a{
+        margin: 0 auto;
+        text-align: center;
+        color: #555;
+    }
+
+    /* 토글탭 디자인 */
+
+    </style>
+</head>
+
+<body>
+    <header class="my-header">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- 휴대폰 사이즈로 줄였을때 나오는 버튼영역 -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- 로고 영역 -->
+                    <a class="navbar-brand" href="#"><img src="img/logo.svg" width="30" alt="logo" /></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <!-- 메뉴 작성 부분 -->
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                    </ul>
+                    <!-- 우측 메뉴부분 (드롭다운) -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">로그인 <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- 네비바 폼영역 -->
+                    <form class="navbar-form navbar-right" action="/action_page.php">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="search" />
+                            <div class="input-group-btn">
+                                <button class="btn btn-primary" type="submit">검색</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <!-- 타이틀 -->
+                    <div class="title-box">
+                        Hello ! World !
+                    </div>
+
+                    <!-- 탭을 눌렀을 때 보여 -->
+                    <!-- li의 아이디와 tab-content안의 id속성이 연결되어 있는 형태 -->
+                    <ul class="nav nav-tabs tabs-basic">
+                        <li class="active"><a data-toggle="tab" href="#home">상품상세</a></li>
+                        <li><a data-toggle="tab" href="#menu1">상품평</a></li>
+                        <li><a data-toggle="tab" href="#menu2">상품문의</a></li>
+                        <li><a data-toggle="tab" href="#menu3">배송/교환/반품 안내</a></li>
+                      </ul>
+                    
+                      <div class="tab-content">
+                        <div id="home" class="tab-pane fade in active">
+                          <h3>상품상세</h3>
+                          <p>상세페이지</p>
+                        </div>
+                        <div id="menu1" class="tab-pane fade">
+                          <h3>상품평</h3>
+                          <p>상품평 리스트</p>
+                        </div>
+                        <div id="menu2" class="tab-pane fade">
+                          <h3>상품문의</h3>
+                          <p>상품QnA</p>
+                        </div>
+                        <div id="menu3" class="tab-pane fade">
+                          <h3>배송/교환/반품 안내</h3>
+                          <p>Menu 3입니다</p>
+                        </div>
+                      </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <!-- 타이틀 -->
+                    <div class="title-box">
+                        Hello ! World !
+                    </div>
+
+                    <!-- 탭을 눌렀을 때 보여 -->
+                    <!-- li의 아이디와 tab-content안의 id속성이 연결되어 있는 형태 -->
+                    <ul class="nav nav-tabs">
+                        <li><a data-toggle="tab" href="#tab1">상품상세</a></li>
+                        <li class="active"><a data-toggle="tab" href="#tab2">상품평</a></li>
+                        <li><a data-toggle="tab" href="#tab3">상품문의</a></li>
+                        
+                      </ul>
+                    
+                      <div class="tab-content">
+                        <div id="tab1" class="tab-pane fade in active">
+                          <h3>상품상세</h3>
+                          <p>상세페이지</p>
+                        </div>
+                        <div id="tab2" class="tab-pane fade">
+                          <h3>상품평</h3>
+                          <p>상품평 리스트</p>
+                        </div>
+                        <div id="tab3" class="tab-pane fade">
+                          <h3>상품문의</h3>
+                          <p>상품QnA</p>
+                        </div>
+               
+                      </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="footer-copyrigth">
+                        <a href="#"><img src="img/logo.svg" width="20" /></a>
+                        대표자 : 홍길동 email : kkk@gmail.com <br />
+                        개인정보 책임자 : 홍길동 : 온라인 강의 진행 주소: 서울 강남구역삼
+                        <address>@bootstrap. All RIGHT REVERSED</address>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12"></div>
+
+                <!-- <ul class="footer-menu text-rigth"> = text-rigth 직접 적용 가능  -->
+                <ul class="footer-menu">
+                    <li><a href="#">유용한 정보</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">고객선터</a></li>
+                    <li><a href="#">개인정보 취급반식</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -53,7 +53,7 @@ footer {
   color: white;
   font-size: 13px;
   padding: 40px 0; /* 위아래 , 좌우  */
-  margin: 70px; /*footer 바깥여백 70, 본문 영역에 붙지 않도록 */
+  margin-top: 70px; /*footer 바깥여백 70, 본문 영역에 붙지 않도록 */
 }
 footer .footer-copyrigth address {
   margin-bottom: 0;
@@ -197,3 +197,173 @@ footer .footer-menu li a {
 .text-center {overflow: hidden;}
 .text-center ul {margin: 0;}
 .text-center button {float: right; padding: 4px 12px;}
+
+
+/* ========== 상품 디테일 ========== */
+.detail-info .title {
+  font-size: 20px;
+  font-weight: 500;
+
+}
+
+.detail-info .price {
+  /* 상자 아래쪽 윤각 */
+  border-bottom: 1px solid #777;
+  border-top: 1px solid #777;
+  padding: 10PX 0;
+}
+
+.detail-info .content {
+  color: #888;
+}
+
+.detail-control {
+  padding-top: 147px;
+}
+
+.detail-control .price,
+.detail-control .order {
+  overflow: hidden;
+}
+
+.detail-control .left {
+  float: left;
+}
+
+.detail-control .right {
+  float: right;
+}
+
+/* 글씨 조정 (상자 높이에 line-height 를 맞춘다)*/
+.detail-control .price .left {
+  font-size: 15px;
+  line-height: 52px;
+  margin: 0;
+}
+
+.detail-control .price .right {
+  font-size: 30px;
+  line-height: 52px;
+  margin: 0;
+}
+
+/* 버튼 */
+.detail-control .order button {
+  width: 50%;
+  padding: 10px 50px;
+}
+
+/* 댓글영역 */
+
+.reply-group input {
+  width: 180px;
+  margin-bottom: 5px;
+}
+
+.reply-wrap {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 20px;
+  position: relative; /* 부모영역에 relative */
+}
+
+/* 이미지 포지션 */
+.reply-img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.reply-content {
+  padding-left: 60px;
+}
+.reply-group {overflow: hidden; }
+.reply-group .left {float: left; }
+.reply-group .right {float: right;}
+
+/* 텍스트영역 리사이징 옵션, 애니메이션 */
+.reply-content textarea {
+  margin-bottom: 10px;
+  resize: vertical;
+  height: 100px;
+  transition: height 0.5s ease-in-out; /* 애니메이션 (변경속성, 지속시간, 애니메이션방식, 딜레이초(생략가능)*/
+}
+
+.reply-content textarea:focus {
+  height: 200px;
+}
+
+/* 댓글코멘트 영역 - 위 클래스를 재활용 */
+.reply-group a{
+  color: #777;
+  text-decoration: none;
+}
+
+.reply-group small{
+  margin: 0 10px;
+}
+
+
+/* ==========  회원가입 ========== */
+/* 제목박스 */
+.title-box {
+  width: 250px;
+  margin: 60px auto;
+  /* 박스정렬 */
+  text-align: center;
+  /* 글씨정렬 */
+  padding: 20px 40px;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  font-size: large;
+}
+
+.join-form {
+  /* 
+  가운데 정렬이 안되는 이유가 
+  col과 관련된 애들이 float :left로 잡고있기 때문이다
+  */
+  
+  /* 하나의 그리드 상자를 정가운데 정렬방법 */
+  margin: 0 auto;
+
+  float: none;
+}
+
+.join-form form{
+  /* 박스 스타일 */
+  padding: 50px;
+  border: 1px solid #777; 
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.335) ; /* 박스의 그림자(가로크기, 세로크기, 흐릿한정도, 색상 */
+}
+
+/* 767px미만일 때 적용(col-xs가 동작하는 픽셀과 동일) */
+@media(max-width: 767px){
+  .join-form form{
+      padding: 50px ;
+  }
+}
+
+
+/* ==========  로그인 ========== */
+
+.login-form{
+  margin: 100px auto;
+  float: none;
+}
+
+.login-form form{
+  border: 1px solid rgb(197, 197, 197);
+  
+  padding: 100px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px  rgb(197, 197, 197);
+
+}
+
+@media(max-width: 767px){
+  .login-form form{
+      padding: 50px ;
+  }
+}
