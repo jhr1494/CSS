@@ -1,0 +1,41 @@
+/* 폰트 */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap');
+
+
+/* 디자인 시작시 전역 설정 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+}
+
+body,
+html {
+  font-family: "Merriweather", serif;
+  width: 100%;
+  min-width: 320px; 
+}
+
+img {
+  max-width: 100%;
+  height: auto; 
+}
+
+input,
+textarea,
+button,
+select {
+  -webkit-accelerator: none;
+  -moz-accelerator: none;
+  -ms-accelerator: none;
+  -o-accelerator: none;
+  appearance: none;
+}
+
+ul,
+li,
+ol,
+dl {
+  list-style: none;
+}

@@ -1,28 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!-- 부트스크랩 참조파일 -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+     <!-- 부트스크랩 참조파일 -->
+     <link rel="stylesheet" href="css/bootstrap.min.css" />
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+ 
+     <!-- 개인 디자인 추가 -->
+     <link rel="stylesheet" href="css/reset.css" />
+     <link rel="stylesheet" href="css/style.css" />
+     <style type="text/css">
 
-    <!-- 개인 디자인 추가 -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <style type="text/css">
+    .main-con{
+        margin-top: 30px;
+    }
     
+    /* 좌측 */
+     .left-menu a{
+         text-decoration: none;
+         color: black;
+     }
+
+     /* 우측 */
+     .right-con{
+         margin: 0 auto;
+         border-left: 1px solid #777;
+         border-right: 1px solid #777;
+     }
+
+     .right-con a{
+         text-decoration: none;
+         color: black;
+     }
+
+     .right-con .con-img{
+         width: 100%;
+     }
+
+     /* 좋아요 파란색 */
+     .down-like ul{
+         display: block;
+         margin: 5px 0;
+         padding: 10px 0;
+         border-top: 1px solid #777;
+         border-bottom: 1px solid #777;
+     }
+
+     .down-like .like {
+        display: inline;
+        background-color: rgb(0, 140, 255);
+        border-radius: 100%;
+        color: white;
+        padding: 3px;
+     }
+
+     /* 하단 버튼 */
+     .down-menu ul{
+        text-align: center;
+        margin: 0 70px;
+
+     }
+   
 
 
-    /* 토글탭 디자인 */
+     </style>
 
-    </style>
 </head>
-
 <body>
     <header class="my-header">
         <nav class="navbar">
@@ -71,92 +118,69 @@
         </nav>
     </header>
 
+
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-
-                    <!-- 타이틀 -->
-                    <div class="title-box">
-                        Hello ! World !
-                    </div>
-
-                    <!-- 탭을 눌렀을 때 보여 -->
-                    <!-- li의 아이디와 tab-content안의 id속성이 연결되어 있는 형태 -->
-                    <ul class="nav nav-tabs tabs-basic">
-                        <li class="active"><a data-toggle="tab" href="#home">상품상세</a></li>
-                        <li><a data-toggle="tab" href="#menu1">상품평</a></li>
-                        <li><a data-toggle="tab" href="#menu2">상품문의</a></li>
-                        <li><a data-toggle="tab" href="#menu3">배송/교환/반품 안내</a></li>
-                      </ul>
-                    
-                      <div class="tab-content">
-                        <div id="home" class="tab-pane fade in active">
-                          <h3>상품상세</h3>
-                          <p>상세페이지</p>
-                        </div>
-                        <div id="menu1" class="tab-pane fade">
-                          <h3>상품평</h3>
-                          <p>상품평 리스트</p>
-                        </div>
-                        <div id="menu2" class="tab-pane fade">
-                          <h3>상품문의</h3>
-                          <p>상품QnA</p>
-                        </div>
-                        <div id="menu3" class="tab-pane fade">
-                          <h3>배송/교환/반품 안내</h3>
-                          <p>Menu 3입니다</p>
-                        </div>
-                      </div>
-
-
-                </div>
-            </div>
-        </div>
-    </section>
+                <div class="main-con">
+                    <div class="col-md-3 col-lg-3 left-menu">
+                        <ul>
+                            <li><img src="img/profile.png">
+                            <a href="#">박인욱</a></li>
     
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-
-                    <!-- 타이틀 -->
-                    <div class="title-box">
-                        Hello ! World !
+                            <li><a href="#">뉴스피드</a></li>
+                            <li><a href="#">메신저</a></li>
+                            <li><a href="#">watch 동영상</a></li>
+                            
+                        </ul>
+                        <ul>
+                            <li><a href="#">둘러보기</a></li>
+                            <li><a href="#">기부캠페인</a></li>
+                            <li><a href="#">페이지</a></li>
+                            <li><a href="#">그룹</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">친구리스트</a></li>
+                            
+                        </ul>
+    
                     </div>
-
-                    <!-- 탭을 눌렀을 때 보여 -->
-                    <!-- li의 아이디와 tab-content안의 id속성이 연결되어 있는 형태 -->
-                    <ul class="nav nav-tabs tabs-basic2">
-                        <li><a data-toggle="tab" href="#tab1">상품상세</a></li>
-                        <li class="active"><a data-toggle="tab" href="#tab2">상품평</a></li>
-                        <li><a data-toggle="tab" href="#tab3">상품문의</a></li>
-                        
-                      </ul>
-                    
-                      <div class="tab-content">
-                        <div id="tab1" class="tab-pane fade in active">
-                          <h3>상품상세</h3>
-                          <p>상세페이지</p>
+                    <div class="col-xs-12 col-md-9 col-lg-9 right-con">
+                        <div class="content-pro">
+                            <ul>
+                                <img src="img/profile.png">
+                                <a href="#">테스트</a>
+                                <small>21시간</small>
+                            </ul>
                         </div>
-                        <div id="tab2" class="tab-pane fade">
-                          <h3>상품평</h3>
-                          <p>상품평 리스트</p>
+    
+                        <div class="content">
+                            <p>삶아 우리를 끝없이 시험하기에 고어텍스는 한계를 테스트합니다</p>
+                            <img src="img/facebook.jpg" class="con-img">
                         </div>
-                        <div id="tab3" class="tab-pane fade">
-                          <h3>상품문의</h3>
-                          <p>상품QnA</p>
+                        <div class="down-like">
+                            <ul>
+                                <li class="glyphicon glyphicon-thumbs-up like"></li>
+                                522
+                            </ul>
+                            
                         </div>
-               
-                      </div>
-
+                        <div class="down-menu">
+                            <ul class="glyphicon glyphicon-thumbs-up"><a href="#">좋아요</a></ul>
+                            <ul class="glyphicon glyphicon-comment"><a href="#">댓글달기</a></ul>
+                            <ul class="glyphicon glyphicon-share-alt"><a href="#">공유하기</a></ul>
+                        </div>
+    
+    
+                    </div>
 
                 </div>
             </div>
         </div>
+
+
     </section>
 
-    <!-- 푸터 -->
+
     <footer>
         <div class="container">
             <div class="row">
@@ -180,6 +204,6 @@
             </div>
         </div>
     </footer>
+    
 </body>
-
 </html>

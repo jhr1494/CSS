@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <style type="text/css">
     
+       
 
-
-    /* 토글탭 디자인 */
+   
 
     </style>
 </head>
@@ -71,92 +71,71 @@
         </nav>
     </header>
 
-    <section>
+    <section style="margin-top: 100px;">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-
-                    <!-- 타이틀 -->
-                    <div class="title-box">
-                        Hello ! World !
+                <aside class="col-sm-3 aside-facebook"> <!-- 좌측사이드 -->
+                    <div class="menu1">
+                        <div>
+                            <img src="img/profile.png" width="50" alt="프로필">
+                            홍길동
+                        </div>
+                        <ul>
+                            <li>뉴스피드</li>
+                            <li>메신저</li>
+                            <li>watch동영상</li>
+                        </ul>
                     </div>
-
-                    <!-- 탭을 눌렀을 때 보여 -->
-                    <!-- li의 아이디와 tab-content안의 id속성이 연결되어 있는 형태 -->
-                    <ul class="nav nav-tabs tabs-basic">
-                        <li class="active"><a data-toggle="tab" href="#home">상품상세</a></li>
-                        <li><a data-toggle="tab" href="#menu1">상품평</a></li>
-                        <li><a data-toggle="tab" href="#menu2">상품문의</a></li>
-                        <li><a data-toggle="tab" href="#menu3">배송/교환/반품 안내</a></li>
-                      </ul>
-                    
-                      <div class="tab-content">
-                        <div id="home" class="tab-pane fade in active">
-                          <h3>상품상세</h3>
-                          <p>상세페이지</p>
-                        </div>
-                        <div id="menu1" class="tab-pane fade">
-                          <h3>상품평</h3>
-                          <p>상품평 리스트</p>
-                        </div>
-                        <div id="menu2" class="tab-pane fade">
-                          <h3>상품문의</h3>
-                          <p>상품QnA</p>
-                        </div>
-                        <div id="menu3" class="tab-pane fade">
-                          <h3>배송/교환/반품 안내</h3>
-                          <p>Menu 3입니다</p>
-                        </div>
-                      </div>
+                    <div class="menu2">
+                        <ul>
+                            <li>둘러보기</li>
+                            <li>기부캠페인</li>
+                            <li>페이지</li>
+                            <li>그룹이벤트</li>
+                            <li>친구리스트</li>
+                        </ul>
+                    </div>
+                </aside>
 
 
+                <div class="col-xs-12 col-sm-9 section-facebook"> <!-- 우측 본문 -->
+                    <div> <!-- 컨텐츠영역 -->
+                        <div class="title-inner">
+                            <div class="profile"><img src="img/profile.png" width="50" alt="프로필"></div>
+                            <div class="title">
+                                <p>이름</p>
+                                <small>21시간</small>
+                            </div>
+                        </div> 
+
+                        <div class="content-inner">
+                            <p>삶이 우리를 끝없이 시험하기에 고어텍스는 한계를 테스트합니다</p>
+                        </div> 
+
+                        <div class="img-inner">
+                            <img src="img/facebook.jpg" width="100%">
+                        </div>
+
+                        <div class="like-inner">
+                            <a><img src="img/like.png" width="20" alt="좋아요" >
+                                <span>522</span>
+                            </a>
+                        </div>
+
+                        <div class="button-inner">
+                            <a href="#"><span><i class="glyphicon glyphicon-thumbs-up"></i>좋아요</span></a>
+                            <a href="#"><span><i class="glyphicon glyphicon-comment"></i>댓글달기</span></a>
+                            <a href="#"><span><i class="glyphicon glyphicon-share-alt"></i>공유하기</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-
-                    <!-- 타이틀 -->
-                    <div class="title-box">
-                        Hello ! World !
-                    </div>
-
-                    <!-- 탭을 눌렀을 때 보여 -->
-                    <!-- li의 아이디와 tab-content안의 id속성이 연결되어 있는 형태 -->
-                    <ul class="nav nav-tabs tabs-basic2">
-                        <li><a data-toggle="tab" href="#tab1">상품상세</a></li>
-                        <li class="active"><a data-toggle="tab" href="#tab2">상품평</a></li>
-                        <li><a data-toggle="tab" href="#tab3">상품문의</a></li>
-                        
-                      </ul>
-                    
-                      <div class="tab-content">
-                        <div id="tab1" class="tab-pane fade in active">
-                          <h3>상품상세</h3>
-                          <p>상세페이지</p>
-                        </div>
-                        <div id="tab2" class="tab-pane fade">
-                          <h3>상품평</h3>
-                          <p>상품평 리스트</p>
-                        </div>
-                        <div id="tab3" class="tab-pane fade">
-                          <h3>상품문의</h3>
-                          <p>상품QnA</p>
-                        </div>
-               
-                      </div>
 
 
-                </div>
-            </div>
-        </div>
     </section>
 
-    <!-- 푸터 -->
+
     <footer>
         <div class="container">
             <div class="row">

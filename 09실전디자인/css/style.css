@@ -3,6 +3,10 @@ section {margin-top: 50px;}
 .form-control {
   border-radius: 0;
 }
+
+.form-control:focus{
+  border-color: aqua;
+}
 .bnt {
   border-radius: 0;
 }
@@ -365,5 +369,133 @@ footer .footer-menu li a {
 @media(max-width: 767px){
   .login-form form{
       padding: 50px ;
+  }
+}
+
+/* ==========  탭스타일 ========== */
+  /* 토글탭 basic */
+.tabs-basic > li {
+  width: 25%;
+ }
+.tabs-basic > li > a:hover {
+  background-color: #dddddd;
+}
+.tabs-basic > li > a {
+  color : #555;
+  margin: 0;
+  text-align: center;
+}
+
+/* 토글탭 디자인 */
+.tabs-style {
+  margin: 0 auto;
+  float: none;
+}
+
+/* 활성화 된 a태그를 의미 */        
+.tabs-basic2 li.active > a,
+.tabs-basic2 li.active > a:focus,
+.tabs-basic2 li.active > a:hover {
+  background-color:rgb(52, 117, 128);
+  color: white;
+  border: none;
+}
+
+/* 기본 a태그 */
+.tabs-basic2 > li >a {
+  margin-right: 0; 
+  border-radius: 0;/* 모서리 둥글게 */
+  background-color:  rgb(51, 165, 185);
+  color: white;
+  border: none;
+}
+
+/* 기본 a태그에 hover가 된경우를 의미 */
+.tabs-basic2 > li > a:hover {
+  background-color: rgb(52, 117, 128);
+  color: white;
+  border: none;
+}
+
+/* ==========  내정보 관리 ========== */
+.m-control > tr > .m-title{
+  width: 110px;
+  vertical-align: middle;
+  
+}
+
+.m-control .m-md{ /* 중간사이즈 */
+  width: 200px;
+  display: inline;
+}
+
+.m-control .m-sm{ /* 작은사이즈 */
+  width: 150px;
+  display: inline;
+}
+
+.m-footer{
+  text-align: center;
+}
+
+/* ========== 페이스북 그리드 ========== */
+.section-facebook{
+  border-right: 1px solid #cccc;
+  border-left: 1px solid #cccc;
+}
+.title-inner {position: relative;} /* 부모영역 */
+.title-inner .profile{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.title-inner .title{
+  padding-left: 60px;
+}
+
+.content-inner{
+  padding: 10px 0; /* 위아래 10 좌우 0*/
+}
+
+.like-inner, .button-inner{
+  border-top: 1px solid #cccc;
+}
+
+.like-inner{
+  margin-top: 10px;
+  padding: 5px 0;
+}
+
+.like-inner a{
+  text-decoration: none;
+  color: black;
+  
+}
+
+.like-inner span{
+  vertical-align: middle;
+}
+
+.button-inner {overflow: hidden;} /* 부모 */
+
+.button-inner a{
+  float: left;
+  width: 33.3333%;
+  text-align: center;
+  color: black;
+  padding: 10px 0;
+}
+
+.button-inner i{
+  margin: 0 5px; /* 위아래 0 좌우 5*/
+}
+
+
+
+@media(max-width: 767px){
+
+  .aside-facebook{
+    display: none;
   }
 }
